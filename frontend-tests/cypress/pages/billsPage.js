@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import faker from 'faker'
+
 //Elements
 const createBillButton = 'h2 > .btn'
 const backButton = ':nth-child(3) > .btn'
@@ -10,7 +12,8 @@ const valueField = 'input'
 const paidField = '.checkbox'
 const saveButton = '.blue'
 const newBillCard = '.bills > :nth-child(2)'
-
+//faker
+let billValue = faker.random.number({min:800, max:3000})
 
 //Functions/ actions
 function goToHomePage(cy, contentToConfirm){
@@ -21,7 +24,7 @@ function goToHomePage(cy, contentToConfirm){
 function createNewBill(cy, contentToConfirm){
     cy.get(createBillButton).click()
     cy.contains(contentToConfirm)
-    cy.get(valueField).type('2000')
+    cy.get(valueField).type(billValue)
     cy.get(saveButton).click()
     cy.get(newBillCard).should('contain', 'ID: 2')
 }

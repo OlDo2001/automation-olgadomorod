@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-05T14:32:28.679Z",
+    "end": "2021-11-05T14:32:50.085Z",
+    "duration": 21406,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "160a9d18-2c26-470e-be70-13869460244d",
+      "title": "",
+      "fullFile": "cypress/integration/regression-page-objects.spec.js",
+      "file": "cypress/integration/regression-page-objects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+          "title": "Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Correct rooms link and back to Home page",
+              "fullTitle": "Test suite Correct rooms link and back to Home page",
+              "timedOut": null,
+              "duration": 2882,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewRooms(cy, 'Rooms');\nroomsFuncs.goToHomePage(cy, 'Tester Hotel Overview');",
+              "err": {},
+              "uuid": "5a8f3b5b-a7c0-42c7-90c7-c758dc71cbb5",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Correct clients link and back to Home page",
+              "fullTitle": "Test suite Correct clients link and back to Home page",
+              "timedOut": null,
+              "duration": 1938,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewClients(cy, 'Clients');\nclientsFuncs.goToHomePage(cy, 'Tester Hotel Overview');",
+              "err": {},
+              "uuid": "35c025d1-b041-437d-9ad9-00318c2c1449",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Correct bills link and back to Home page",
+              "fullTitle": "Test suite Correct bills link and back to Home page",
+              "timedOut": null,
+              "duration": 1805,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewBills(cy, 'Bills');\nbillsFuncs.goToHomePage(cy, 'Tester Hotel Overview');",
+              "err": {},
+              "uuid": "88666239-88d9-411b-8c58-cc4d45c85ab9",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Correct reservations link",
+              "fullTitle": "Test suite Correct reservations link",
+              "timedOut": null,
+              "duration": 1664,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewReservation(cy, 'Reservations');",
+              "err": {},
+              "uuid": "10aa3aaa-5769-4c84-9034-ce8a5996da9e",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create, change and delete a bill",
+              "fullTitle": "Test suite Create, change and delete a bill",
+              "timedOut": null,
+              "duration": 2619,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewBills(cy, 'Bills');\nbillsFuncs.createNewBill(cy, 'New Bill');\nbillsFuncs.changeBill(cy);\nbillsFuncs.deleteBill(cy);",
+              "err": {},
+              "uuid": "7dff0d8a-a69e-41dc-9c9e-61f00a2d9467",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create and delete a client",
+              "fullTitle": "Test suite Create and delete a client",
+              "timedOut": null,
+              "duration": 3315,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewClients(cy, 'Clients');\nclientsFuncs.createNewClient(cy, 'New Client');\nclientsFuncs.deleteClient(cy);",
+              "err": {},
+              "uuid": "c571b119-4968-4695-90b0-ce8095e1ca02",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create and delete a room",
+              "fullTitle": "Test suite Create and delete a room",
+              "timedOut": null,
+              "duration": 3313,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashBoardFuncs.viewRooms(cy, 'Rooms');\nroomsFuncs.createNewRoom(cy, 'New Room');\nroomsFuncs.deleteRoom(cy);",
+              "err": {},
+              "uuid": "61b2c646-5f27-46a6-aa01-e39287ee5e5e",
+              "parentUUID": "21c6b37d-d5bb-440a-b082-bf25cb408d3e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5a8f3b5b-a7c0-42c7-90c7-c758dc71cbb5",
+            "35c025d1-b041-437d-9ad9-00318c2c1449",
+            "88666239-88d9-411b-8c58-cc4d45c85ab9",
+            "10aa3aaa-5769-4c84-9034-ce8a5996da9e",
+            "7dff0d8a-a69e-41dc-9c9e-61f00a2d9467",
+            "c571b119-4968-4695-90b0-ce8095e1ca02",
+            "61b2c646-5f27-46a6-aa01-e39287ee5e5e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17536,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
